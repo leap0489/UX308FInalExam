@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix} from './functions.js';
 
 function Question1(){
     return <section>
@@ -20,4 +20,14 @@ function Question2(){
     </section>
 }
 
-export {Question1, Question2}
+function Question1Real(){
+    return <section>
+1. Colour function 
+<h2>results</h2>
+<p>colour_mix(red,blue)) == "{colour_mix("red", "blue")}"</p>
+<p>colour_mix(blue,blue)) == "{colour_mix("blue", "blue")}"</p>
+<p>colour_mix(red,green)) == "{colour_mix("red", "green")}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question1Real}

@@ -7,4 +7,24 @@ function fahrenheitToCelsius(fahrenheit){
     return celsius;
 }
 
-export {hello, fahrenheitToCelsius}
+function colour_mix (rgb_colour1, rgb_colour2){
+    let rgb_colour;
+    if (rgb_colour1 == "red" && rgb_colour2 == "blue"){
+        rgb_colour = "fuschia";
+    }else if (rgb_colour1 == "red" && rgb_colour2 == "green"){
+        rgb_colour = "yellow";
+    }else if (rgb_colour1 == "green" && rgb_colour2 == "blue"){
+        rgb_colour = "aqua";
+    }else if (rgb_colour1 == "red" && rgb_colour2 == "red"){
+        rgb_colour = "red";
+    }else if (rgb_colour1 == "blue" && rgb_colour2 == "blue"){
+        rgb_colour = "blue";
+    }else if (rgb_colour1 == "green" && rgb_colour2 == "green"){
+        rgb_colour = "green";
+    }else if (rgb_colour1 !== "red" && rgb_colour1 !== "blue" && rgb_colour1 !== "green" && rgb_colour2 !== "red" && rgb_colour2 !== "blue" && rgb_colour2 !== "green"){
+        rgb_colour = "error";
+    }
+    return rgb_colour;
+}
+
+export {hello, fahrenheitToCelsius, colour_mix}
