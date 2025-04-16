@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product} from './functions.js';
 
 function Question1(){
     return <section>
@@ -24,10 +24,21 @@ function Question1Real(){
     return <section>
 1. Colour function 
 <h2>results</h2>
-<p>colour_mix(red,blue)) == "{colour_mix("red", "blue")}"</p>
-<p>colour_mix(blue,blue)) == "{colour_mix("blue", "blue")}"</p>
-<p>colour_mix(red,green)) == "{colour_mix("red", "green")}"</p>
+<p>colour_mix(red,blue) == "{colour_mix("red", "blue")}"</p>
+<p>colour_mix(blue,blue) == "{colour_mix("blue", "blue")}"</p>
+<p>colour_mix(red,green) == "{colour_mix("red", "green")}"</p>
     </section>
 }
 
-export {Question1, Question2, Question1Real}
+function Question2Real(){
+    return <section>
+2. Largest product function
+<h2>results</h2>
+<p>largest_product(1,2,3) == "{largest_product(1,2,3)}"</p>
+<p>largest_product(11,5,3) == "{largest_product(11,5,3)}"</p>
+<p>largest_product(20,10,6) == "{largest_product(20,10,6)}"</p>
+    </section>
+}
+
+
+export {Question1, Question2, Question1Real, Question2Real}

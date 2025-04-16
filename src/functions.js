@@ -27,4 +27,16 @@ function colour_mix (rgb_colour1, rgb_colour2){
     return rgb_colour;
 }
 
-export {hello, fahrenheitToCelsius, colour_mix}
+function largest_product (val1, val2, val3){
+    let product;
+    if (val1 <= val2 && val1 <= val3){
+        product = (val2 * val3);
+    }else if (val2 <= val1 && val2 <= val3){
+        product = (val1 * val3);
+    }else {
+        product = val1 * val2;
+    }
+    return product;
+}
+
+export {hello, fahrenheitToCelsius, colour_mix, largest_product}
