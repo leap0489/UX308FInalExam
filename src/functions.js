@@ -12,11 +12,11 @@ function colour_mix (rgb_colour1, rgb_colour2){
     const valid_colours = ["red", "green", "blue"];
     if (!valid_colours.includes(rgb_colour1) || !valid_colours.includes(rgb_colour2)) {
         return "error";
-    }else if (rgb_colour1 == "red" && rgb_colour2 == "blue"){
+    }else if (rgb_colour1 == "red" && rgb_colour2 == "blue" || rgb_colour1 == "blue" && rgb_colour2 == "red"){
         rgb_colour = "fuschia";
-    }else if (rgb_colour1 == "red" && rgb_colour2 == "green"){
+    }else if (rgb_colour1 == "red" && rgb_colour2 == "green" || rgb_colour1 == "green" && rgb_colour2 == "red"){
         rgb_colour = "yellow";
-    }else if (rgb_colour1 == "green" && rgb_colour2 == "blue"){
+    }else if (rgb_colour1 == "green" && rgb_colour2 == "blue" || rgb_colour1 === "blue" && rgb_colour2 === "green"){
         rgb_colour = "aqua";
     }else if (rgb_colour1 == "red" && rgb_colour2 == "red"){
         rgb_colour = "red";

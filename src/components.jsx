@@ -24,7 +24,7 @@ function Question1Real(){
     return <section>
 1. Colour function 
 <h2>results</h2>
-<p>colour_mix(red,blue) == "{colour_mix("red", "blue")}"</p>
+<p>colour_mix(blue),red) == "{colour_mix("blue", "red")}"</p>
 <p>colour_mix(blue,blue) == "{colour_mix("blue", "blue")}"</p>
 <p>colour_mix(red,green) == "{colour_mix("red", "green")}"</p>
     </section>
