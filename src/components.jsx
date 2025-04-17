@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, largest_product} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week} from './functions.js';
 
 function Question1(){
     return <section>
@@ -40,5 +40,14 @@ function Question2Real(){
     </section>
 }
 
+function Question3 (){
+    return <section>
+<h2>results</h2>
+<p>day_of_the_week(17) == "{day_of_the_week(17)}"</p>
+<p>day_of_the_week(3) == "{day_of_the_week(3)}"</p>
+<p>day_of_the_week(6) == "{day_of_the_week(6)}"</p>
+    </section>
+}
 
-export {Question1, Question2, Question1Real, Question2Real}
+
+export {Question1, Question2, Question1Real, Question2Real, Question3}
