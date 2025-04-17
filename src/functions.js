@@ -64,4 +64,21 @@ function day_of_the_week (day_num){
 
 }
 
-export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week}
+function pay_raise (status, years, salary){
+    let new_salary;
+    if (status == "F" && years >= 10){
+        new_salary = salary * 1.05;
+    }else if (status == "F" && years < 4){
+        new_salary = salary * 1.015;
+    }else if (status == "P" && years > 10){
+        new_salary = salary * 1.03;
+    }else if (status == "P" && years < 4){
+        new_salary = salary * 1.01;
+    }else {
+        new_salary = salary * 1.02
+    }
+
+    return new_salary;
+}
+
+export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise}

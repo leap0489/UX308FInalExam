@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise} from './functions.js';
 
 function Question1(){
     return <section>
@@ -49,5 +49,13 @@ function Question3 (){
     </section>
 }
 
+function Question4 (){
+    return <section>
+<h2>results</h2>
+<p>pay_raise("F",11,100) == "{pay_raise("F",11,100)}"</p>
+<p>pay_raise("F",2,100) == "{pay_raise("F",2,100)}"</p>
+<p>pay_raise("P",3,100) == "{pay_raise("P",3,100)}"</p>
+    </section>
+}
 
-export {Question1, Question2, Question1Real, Question2Real, Question3}
+export {Question1, Question2, Question1Real, Question2Real, Question3, Question4}
