@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap} from './functions.js';
 
 function Question1(){
     return <section>
@@ -42,6 +42,7 @@ function Question2Real(){
 
 function Question3 (){
     return <section>
+3. Weekday function
 <h2>results</h2>
 <p>day_of_the_week(17) == "{day_of_the_week(17)}"</p>
 <p>day_of_the_week(3) == "{day_of_the_week(3)}"</p>
@@ -51,6 +52,7 @@ function Question3 (){
 
 function Question4 (){
     return <section>
+4. Pay raise function
 <h2>results</h2>
 <p>pay_raise("F",11,100) == "{pay_raise("F",11,100)}"</p>
 <p>pay_raise("F",2,100) == "{pay_raise("F",2,100)}"</p>
@@ -58,4 +60,14 @@ function Question4 (){
     </section>
 }
 
-export {Question1, Question2, Question1Real, Question2Real, Question3, Question4}
+function Question5 (){
+    return <section>
+5. Leap year function
+<h2>results</h2>
+<p>is_leap(1700) == "{is_leap(1700)}"</p>
+<p>is_leap(1600) == "{is_leap(1600)}"</p>
+<p>is_leap(2003) == "{is_leap(2003)}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question1Real, Question2Real, Question3, Question4, Question5}

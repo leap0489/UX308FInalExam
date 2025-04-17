@@ -81,4 +81,21 @@ function pay_raise (status, years, salary){
     return new_salary;
 }
 
-export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise}
+function is_leap(year){
+    let result;
+    if (year % 4 !== 0){
+        result = "false"
+    }else if (year % 100 !== 0 ){
+        result = "true"
+    }else if (year % 400 === 0){
+        result = "true"
+    }else {
+        result = "false"
+    }
+    return result;
+}
+    
+
+
+
+export {hello, fahrenheitToCelsius, colour_mix, largest_product, day_of_the_week, pay_raise, is_leap}
